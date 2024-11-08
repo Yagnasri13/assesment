@@ -1,0 +1,39 @@
+/* Full-screen container */
+.login-container {
+    height: 100vh;
+    background: linear-gradient(to bottom, #f5f7f9, #9cc3f5); /* Light blue gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+/* Title styling */
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 20px; /* Spacing between title and login box */
+    text-align: center;
+}
+
+/* Login box styling */
+.login-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Maximum width for the login box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-family: Calibri,
+}
+
+/* Button primary color and alignment */
+.btn-primary {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+.input-dark {
+    border: 1px solid #080808dd; /* dark border */
+  }

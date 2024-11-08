@@ -1,0 +1,30 @@
+.table tr:nth-child(even) {
+    background-color: rgb(234, 240, 233) 
+  }
+
+ 
+  .table tr:nth-child(odd) {
+    background-color: rgb(214, 227, 207); 
+  }
+
+  .table thead tr{
+    background-color: rgb(234, 240, 233)
+  }
+
+  .custom-table {
+    border: 2px solid rgb(234, 240, 233); 
+  }
+
+  .custom-table th, .custom-table td {
+    border:2px solid rgb(164, 201, 141); 
+  }
+  
+  .customBgColor{
+    background-color: rgb(47, 85, 150);
+  }
+
+  .col-md-2 .fa {
+    font-size: 1.5em; 
+    color: #1A73E8; 
+    margin-right: 10px; 
+}

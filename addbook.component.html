@@ -1,0 +1,90 @@
+<div class="container mt-5">
+    <h2 class="text-white bg-primary p-3">Add Book</h2>
+    <form (ngSubmit)="onSubmit()" #bookForm="ngForm">
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">ISBN Number</label>
+        <div class="col-9">
+          <input type="text" class="form-control border border-dark" name="isbn" #isbn="ngModel" [(ngModel)]="add.isbn" minlength="5" maxlength="50" 
+        oninput="this.value=this.value.replace(/[^0-9]/g, '')">
+        <div *ngIf="isbn.errors?.['minlength']" class="text-danger">
+          Minimum 5 numbers required
+      </div>
+      </div>
+    </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">Name</label>
+          <div class="col-9">
+        <input type="text" class="form-control border border-dark" name="name" #name="ngModel" [(ngModel)]="add.name" minlength="5" maxlength="50"
+        oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+        <div *ngIf="name.errors?.['minlength']" class="text-danger">
+          Minimum 5 letters required
+         </div>
+      </div>
+      </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="text-dark col-3 fsize">Author</label>
+          <div class="col-9">
+        <input type="text" class="form-control border border-dark" name="author" #author="ngModel" [(ngModel)]="add.author" maxlength="50" 
+        oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+      </div>
+      </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">Publication</label>
+          <div class="col-9">
+        <input type="text" class="form-control border border-dark" name="publication" #publication="ngModel" [(ngModel)]="add.publication"  minlength="5" maxlength="50"
+        oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
+        <div *ngIf="publication.errors?.['minlength']" class="text-danger">
+          Minimum 5 letters required
+         </div>
+      </div>
+      </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">Details</label>
+        <div class="col-9">
+        <textarea class="form-control border border-dark" name="details" #details="ngModel" [(ngModel)]="add.details"  minlength="5" maxlength="250"
+        oninput="this.value = this.value.replace(/[^a-zA-Z0-9]/g, '')"></textarea>
+        <div *ngIf="details.errors?.['minlength']" class="text-danger">
+          Minimum 5 letters required
+         </div>
+        </div>
+    </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">Qty.</label>
+          <div class="col-9">
+        <input type="text" class="form-control border border-dark" name="quantity" #quantity="ngModel" [(ngModel)]="add.quantity" 
+        minlength="1" maxlength="5" oninput="this.value=this.value.replace(/[^0-9]/g, '')">
+        <div *ngIf="quantity.errors?.['minlength']" class="text-danger">
+          Minimum 1 Numbers required
+         </div>
+      </div>
+      </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="text-dark col-3 fsize">Price</label>
+          <div class="col-9">
+        <input type="text" class="form-control border border-dark" name="price" #price="ngModel" [(ngModel)]="add.price" minlength="2" maxlength="5"
+        oninput="this.value=this.value.replace(/[^0-9]/g, '')">
+        <div *ngIf="price.errors?.['minlength']" class="text-danger">
+          Minimum 2 Numbers required
+         </div>
+      </div>
+      </div>
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3 fsize">Branch</label>
+        <div class="col-9">
+        <select class="form-control border border-dark" name="branch" ngModel>
+          <option value="IT">IT</option>
+          <option value="Civil">Civil</option>
+          <option value="Mechanical">Mechanical</option>
+        </select>
+      </div>
+      </div>
+      <!--  -->
+      <div class="form-row align-items-center mb-3">
+        <label class="col-3"></label>
+          <div class="col-9">
+            <button type="submit" class="btn btn-primary btn-block mt-2">Submit</button>
+      </div>
+      </div>
+    </form>
+  </div>
+  

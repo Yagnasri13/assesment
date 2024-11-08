@@ -1,0 +1,45 @@
+/* Container header title styling */
+.header-title {
+    color: white;
+    background-color: #27468f; /* Dark blue background */
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /* Header row styling */
+  .table-header {
+    background-color: white; /* Light green background */
+    color: black;
+    text-align: center;
+  }
+  
+  /* Table cell styling */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #5ba55b; /* Green border */
+    text-align: center;
+  }
+  
+  /* Row styling for alternating colors */
+  .table-row:nth-child(odd) {
+    background-color:#e5f4df; /* White background for odd rows */
+    height : 50px
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: white; /* Light green background for even rows */
+    height: 50px
+  }
+  
+  /* Delete button styling */
+  .table-header th {
+    background-color: white; /* Light green background */
+    color: black;
+    text-align: center;
+    min-width: 100px; /* Set a minimum width here */
+    padding: 8px;
+  }
+  
+  

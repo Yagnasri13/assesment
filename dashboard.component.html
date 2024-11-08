@@ -1,0 +1,128 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center text-white  p-3 customBgColor">Dashboard</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 p-5 ml-3" style="font-size: 1.25em;">
+        <p><span  ><i class="fa fa-plus"></i> Add  Book</span></p>
+        <p><span ><i class="fa fa-xmark"> </i> Delete  Book</span></p>
+        <p><span > <i class="fa fa-file-lines"> </i> View  Books</span></p>
+        <p><span > <i class="fa fa fa-user"> </i> Add  Student</span></p>
+        <p><span > <i class="fa fa-book"></i> Issue  Book</span></p>
+        <p><span > <i class="fa fa-rotate-left"></i> Return  Book</span></p>
+        <p><span > <i class="fa fa-table-cells"></i> Report  Book</span></p>
+      </div>
+      <div class="col-md-9 p-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="car-body">
+                <p class="text-center">No. Of Books</p>
+                <p class="text-center"><small style="font-size: small;"><span style="color: rgb(58, 103, 181);">&#x25A0;</span> NO. Of Books</small></p>
+                <div class="chart-container" style="width: 100%;">
+                  <canvas  id="MyChart" >{{ chart }}</canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="card">
+              <div class="car-body">
+                <p class="text-center">No. Of Books</p>
+                <p class="text-center"><small style="font-size: small;">NO. Of Books</small></p>
+                <div style="margin-left: 35%;">
+                  
+                  <div style="width:50%;" >
+                      <p-chart  type="pie"  
+                               [data]="data" 
+                               [options]="chartOptions" 
+                               [style]="{'width': '40%'}">
+                      </p-chart>
+                  </div>
+                  
+              </div>
+              <p class="p-2 text-center"><span style="color: rgb(58, 103, 181);">&#x25A0;</span> Person1 <span style="color: rgb(237, 126, 47);">&#x25A0;</span> Person2 <span style="color: rgb(163, 163, 163);">&#x25A0;</span> Person3 <span style="color: rgb(255, 191, 0);">&#x25A0;</span> Person4 <span style="color: rgb(89, 154, 212);">&#x25A0;</span> Person5</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+  
+        <div class="row mt-4">
+          <div class="col-md-12 table-responsive">
+            <p style="font-size: bold;">Issued Book Summary</p>
+            <table class="table  table-striped custom-table">
+              <thead>
+                <tr>
+                  <th class="text-white">
+                    ISBN
+                  </th>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                  <th>Roll No.</th>
+                  <th>Name</th>
+                  <th>Issued On</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

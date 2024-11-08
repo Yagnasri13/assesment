@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <h2 class="header-title mb-4">Delete Book</h2>
+  <table class="table table-bordered table-striped">
+    <thead class="table-header">
+      <tr>
+        <th></th>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Publication</th>
+        <th>Qty.</th>
+        <th>Price</th>
+        <th>Branch</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books; let i = index" class="table-row">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="text-center">
+          <button (click)="deleteBook(i)" class="delete-button">
+            &#10060;
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
